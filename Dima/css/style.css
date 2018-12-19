@@ -1,0 +1,660 @@
+﻿@font-face {
+    font-family: Droid Sans;
+    src: url(../fonts/DroidSans-webfont.eot);
+    src: local("Droid Sans"),url(../fonts/DroidSans-webfont.woff);
+}
+
+@font-face {
+    font-family: Jenna Sue;
+    /*src: url(../fonts/JennaSue-webfont.eot);
+    src: local("Jenna Sue"),url(../fonts/JennaSue-webfont.ttf);*/
+    src: url(../fonts/JennaSue.eot);
+    src: local("Jenna Sue"),url(../fonts/JennaSue.ttf);
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article,aside,figure,footer,header,hgroup,nav,section {
+    display: block;
+}
+
+body {
+    font: normal 1em 'News Cycle',arial,sans-serif;
+    background: #222 url(../images/pattern.png);
+    color: #BBB;
+    padding-bottom: 40px;
+}
+
+.labelStyle {
+    font: normal 14px 'trebuchet ms','News Cycle',Helvetica;
+    color: #fff;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+
+p {
+    /*padding: 0 0 20px;
+    line-height: 1.7em;*/
+    color: #fff;
+}
+
+img {
+    border: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #05C6FC;
+    letter-spacing: 0;
+    padding: 0 0 5px;
+}
+
+h1,h2,h3 {
+    font: normal 400% "Jenna Sue",arial,sans-serif;
+    margin: 0;
+    padding: 16px 0 5px;
+}
+
+#logo_text h2.specialh2 a:link {
+    text-decoration: none;
+    color: #fff;
+    }
+
+#logo_text h2.specialh2 a:visited {
+    text-decoration: none;
+    color: #fff;   
+}
+
+#logo_text h2.specialh2 a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+#logo_text h2.specialh2 a:focus {
+    text-decoration: none;
+    color: #fff;  
+}
+
+h2 {
+    font-size: 260%;
+    /*padding: 9px 0 5px;*/
+}
+
+h3 {
+    font-size: 240%;
+    padding: 5px 0 0;
+}
+
+h4,h6 {
+    padding: 0 0 5px;
+    font: normal 130% arial,sans-serif;
+}
+
+h5,h6 {
+    color: #555;
+    font: italic 95% arial,sans-serif;
+    letter-spacing: normal;
+    padding: 0 0 15px;
+}
+
+a,a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: #05C6FC;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px 0;
+    border: 1px solid #E5E5DB;
+    background: #FFF;
+}
+
+ul {
+    list-style: none;
+    margin: 2px 0 22px 17px;
+    color: #fff;
+    font-size: 14px;
+}
+
+li {
+    margin: 0 0 6px;
+    padding: 0 0 4px 5px;
+}
+
+#content li::before {
+    color: #05c6fc;
+    content: "■";
+    padding: 15px;
+}
+
+ol {
+    margin: 8px 0 22px 20px;
+}
+
+ol li {
+    margin: 0 0 11px;
+}
+
+.left {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+    width: auto;
+    margin-left: 10px;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#main,nav,#container,#logo,#site_content,footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    margin: 0 auto;
+    width: 930px;
+    background: transparent;
+    padding-bottom: 30px;
+}
+
+header {
+    margin: 20px 0 25px;
+    height: 120px;
+}
+
+#logo {
+    width: 905px;
+    height: 120px;
+    background: transparent;
+    color: #888;
+    padding: 0 0 0 25px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#logo_text {
+    width: 300px;
+    float: left;
+}
+
+#logo h1,#logo h2 {
+    font: normal 500% 'Jenna Sue',arial,sans-serif;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#logo_text h1,#logo_text h1 a,#logo_text h1 a:hover {
+    padding: 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+    color: #05C6FC;
+}
+
+#logo_text a:hover .logo_colour {
+    color: #FFF;
+}
+
+#logo_text h2 {
+    font: normal 80% 'Droid Sans',arial,sans-serif;
+    padding: 6px 0 0;
+    color: #FFF;
+}
+
+#textPosition {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    height: 40px;
+    width: 950px;
+    float: left;
+    margin: 0 auto;
+    color: #222;
+    border-top-left-radius: 10px 5px;
+    border-top-right-radius: 10px 5px;
+    -moz-border-radius-topleft: 10px 5px;
+    -moz-border-radius-topright: 10px 5px;
+    -webkit-border-top-left-radius: 10px 5px;
+    -webkit-border-top-right-radius: 10px 5px;
+    background: #a6e6f4;
+}
+
+#site_content {
+    width: 950px;
+    overflow: hidden;
+    margin: 4px auto 0;
+    padding: 0;
+    background: #333;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#sidebar_container {
+    float: left;
+    width: 450px;
+    padding: 0;
+    height: 450px;
+}
+
+#content {
+    text-align: left;
+    width: 440px;
+    margin: 0;
+    float: right;
+    padding: 0 20px 20px;
+}
+
+#content ul {
+    margin: 2px 0 22px;
+}
+
+#content ul li,.sidebar ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 4px 28px;
+    line-height: 1.5em;
+}
+
+/*#blog_container h4 {
+    font: normal 100% 'Droid Sans',arial,sans-serif;
+    margin: 0 0 15px;
+    padding: 5px 0;
+}
+
+#blog_container h4.select {
+    width: 475px;
+}
+
+.blog {
+    background: url(../images/calendar.png) no-repeat;
+    width: 54px;
+    height: 46px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.blog h2 {
+    font: normal 90% arial,sans-serif;
+    text-shadow: none;
+    text-align: center;
+    margin: 0;
+    padding: 4px 0 0;
+    color: #FFF;
+}
+
+.blog h3 {
+    font: 140% arial,sans-serif;
+    text-shadow: none;
+    margin: -5px 0 0;
+    text-align: center;
+    color: #222;
+}*/
+
+footer {
+    width: 928px;
+    font: 100% 'Droid Sans',arial,sans-serif;
+    height: 30px;
+    padding: 9px 0 15px;
+    color: #FFF;
+    text-align: center;
+}
+
+footer p {
+    line-height: 1.7em;
+    padding: 0 0 10px;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFF;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+reglink a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* form styling */
+.form_settings {
+    margin: 0;
+}
+
+.form_settings p {
+    padding: 0 0 10px;
+}
+
+.form_settings span {
+    padding: 5px 0;
+    float: left;
+    width: 170px;  
+    text-align: left;
+}
+
+.form_settings input,.form_settings textarea {
+    padding: 4px;
+    width: 252px;
+    font: 100% 'trebuchet ms','News Cycle',Helvetica;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+    background: transparent;
+}
+
+.form_settings .submit {
+    float: right;
+    font: 100% 'trebuchet ms','News Cycle',Helvetica;
+    border: 0;
+    width: 90px;
+    margin: 13px 10px 0 0;
+    height: 30px;
+    padding: 4px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #444;
+    text-shadow: 1px 1px #000;
+    color: #fff;
+    line-height: 15px;
+}
+
+.form_settings textarea,.form_settings select {
+    font: 100% 'trebuchet ms','News Cycle',Helvetica;
+    border: 1px solid #DDD;
+    border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px;
+    width: 250px;
+    overflow: auto;
+}
+
+.form_settings select {
+    width: 304px;
+}
+
+.form_settings .checkbox {
+    color: #fff;
+    font: 90% 'trebuchet ms','News Cycle',Helvetica;
+    margin-left: 150px;
+    margin-top: 18px;
+    padding: 0;
+    width: 14px;
+    border: 0;
+    background: none;
+}
+
+.separator {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #D9D5CF;
+    border-bottom: 1px solid #FFF;
+    margin: 0 0 20px;
+}
+
+table {
+    margin: 10px 0 30px;
+}
+
+table tr th,table tr td {
+    background: #70D4E6;
+    color: #FFF;
+    padding: 7px 4px;
+    text-align: left;
+}
+
+table tr td {
+    background: #D3F2F7;
+    color: #47433F;
+    border-top: 1px solid #FFF;
+}
+
+ul.images {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul.images li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    list-style: none;
+    float: left;
+}
+
+ul.images li.show {
+    z-index: 500;
+}
+
+ul img {
+    border: none;
+}
+
+/* Configuration of menu width */
+html body ul.sf-menu ul,html body ul.sf-menu ul li {
+    width: 220px;
+}
+
+html body ul.sf-menu ul ul {
+    margin: 0 0 0 220px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * {
+    margin: 0;
+    padding: 0;
+}
+
+ul.sf-menu {
+    display: block;
+    position: relative;
+}
+
+ul.sf-menu li {
+    display: block;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+ul.sf-menu li:hover {
+    visibility: inherit;
+/* fixes IE7 'sticky bug' */
+}
+
+ul.sf-menu a {
+    display: block;
+    position: relative;
+}
+
+ul.sf-menu ul {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    top: auto;
+    left: -999999px;
+}
+
+ul.sf-menu ul a {
+    zoom: 1;
+/* IE6/7 fix */
+}
+
+ul.sf-menu ul li {
+    float: left;
+/* Floated to avoid a rogue 1px margin-bottom in IE6/7 */
+    width: 150px;
+}
+
+ul.sf-menu ul ul {
+    top: 0;
+    margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul,ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul {
+    left: auto;
+}
+
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul {
+    left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    display: block;
+    background: url(../images/arrows-white.png) no-repeat 0 0;
+    overflow: hidden;
+/* ensure IE6 doesn't overflow and expand the box */
+    font-size: 1px;
+}
+
+ul ul span.sf-arrow {
+    right: 5px;
+    top: 20px;
+    background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav {
+    float: right;
+}
+
+ul#nav ul {
+    background: #222;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+
+ul#nav li a {
+    padding: 12px 0 15px;
+    font: 90% 'Droid Sans',arial,sans-serif;
+    text-decoration: none;
+    color: #000;
+    margin-right: 65px;
+    width: auto;
+    text-align: center;
+}
+
+ul#nav li a:hover,ul#nav li a:focus {
+    text-decoration: underline;
+    color: #000;
+}
+
+ul#nav ul li a {
+    color: #FFF;
+}
+
+ul#nav ul li a:hover {
+    color: #05C6FC;
+    margin-right: 2px;
+}
+
+/* Image Transitions */
+ul#images {
+    margin: 0 15px 10px 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+ul#images li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    float: left;
+    width: 155px;
+    height: 300px;
+}
+
+#scrollbox {
+    width: 430px;
+    height: 350px;
+    padding: 5px;
+    border: 1px solid #333;
+    margin: auto;
+    overflow: auto;
+    scrollbar-face-color: #a6e6f4;
+    scrollbar-arrow-color: #333;
+    scrollbar-track-color: #eae9e9;
+    scrollbar-shadow-color: #eae9e9;
+    scrollbar-highlight-color: #eae9e9;
+    scrollbar-3dlight-color: #eae9e9;
+    scrollbar-darkshadow-color: #eae9e9;
+}
+
+#scrollbox::-webkit-scrollbar {
+    width: 7px;
+    background-color: #eae9e9;
+}
+
+#scrollbox::-webkit-scrollbar-thumb {
+    background-color: #a6e6f4;
+    border-radius: 7px;
+}
+
+#scrollbox::-webkit-scrollbar-thumb:hover {
+    background-color: #a6e6f4;
+    border: 1px solid #333;
+}
+
+#scrollbox::-webkit-scrollbar-thumb:active {
+    background-color: #8deef2;
+    border: 1px solid #333;
+}
+
+#scrollbox::-webkit-scrollbar-track {
+    border: 1px solid gray;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px gray;
+}

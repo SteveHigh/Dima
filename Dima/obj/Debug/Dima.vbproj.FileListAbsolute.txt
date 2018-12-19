@@ -1,0 +1,4 @@
+C:\Users\Steve\Documents\Visual Studio 2017\Projects\Dima\Dima\obj\Debug\Dima.vbprojAssemblyReference.cache
+C:\Users\Steve\Documents\Visual Studio 2017\Projects\Dima\Dima\obj\Debug\Dima.Resources.resources
+C:\Users\Steve\Documents\Visual Studio 2017\Projects\Dima\Dima\obj\Debug\Dima.vbproj.GenerateResource.cache
+C:\Users\Steve\Documents\Visual Studio 2017\Projects\Dima\Dima\obj\Debug\Dima.vbproj.CoreCompileInputs.cache
